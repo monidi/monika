@@ -1,0 +1,7 @@
+<apex:page sidebar="false" showHeader="true">
+  <!-- Begin  Default Content REMOVE THIS -->
+  <h1> welcome to salesforce </h1>
+  <h3> hi monika </h3>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardController="Account" recordSetVar="act">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageblocktable value="{!act}" var="vaac">
+                <apex:column value="{!vaac.Name}"/> 
+                 <apex:column value="{!vaac.AccountNumber}"/> 
+                <apex:column value="{!vaac.Rating}"/> 
+                <apex:column value="{!vaac.Phone}"/> 
+           <!-- <apex:column value="{!vaac.}"/> -->
+            </apex:pageblocktable>
+            <apex:commandButton value="<<" action="{!first}"/>
+            <apex:commandButton value="< Previous" action="{!previous}"/>
+            <apex:commandButton value="Next >" action="{!next}"/>
+            <apex:commandButton value=">>" action="{!last}"/>
+            <apex:commandLink value="<<" action="{!first}"/> &nbsp;
+            <apex:commandLink value="< Previous" action="{!previous}"/> &nbsp;
+            <apex:commandLink value="Next >" action="{!next}"/> &nbsp;
+            <apex:commandLink value=">>" action="{!last}"/> &nbsp;
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

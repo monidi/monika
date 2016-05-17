@@ -1,0 +1,9 @@
+<apex:page standardController="Contact">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1><b><u>Contact Information</u></b></h1><br/>
+  <b>Contact Last Name:</b> {!Contact.Name}<br/>
+  <b>Contact Lead Source:</b> {!Contact.LeadSource}<br/>
+  <b>Contact Phone:</b> {!Contact.Phone}<br/>
+  <b>Contact Title:</b> {!Contact.Title}
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

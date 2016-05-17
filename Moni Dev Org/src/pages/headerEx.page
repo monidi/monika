@@ -1,0 +1,6 @@
+<apex:page showHeader="true" sidebar="false" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Hi</h1>
+  <h1><b>This is my new header and sidebar example: headerEx</b></h1>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

@@ -1,0 +1,24 @@
+<apex:page standardController="CusObj1__c" extensions="myControllerExtension" contentType="application/msWord">
+<!--contentType="application/msWord"-->
+   <apex:relatedList list="ChildCusObjects__r" />
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!acct}" var="a">
+        
+
+            <apex:column value="{!a.Name}"/>
+            <apex:repeat value="{!a.ChildCusObjects__r}" var="c"> 
+               <!-- <apex:column value="{!c.Name}"/>-->
+              <!--<apex:column headerValue="Product">
+
+                <apex:outputText value="{!c.Name}"/>
+                </apex:column>-->
+
+                
+                <apex:column value="{!c.text_area__c}"/>
+                <br/>
+            </apex:repeat>
+        </apex:pageBlockTable>
+        
+    </apex:pageBlock>
+    
+</apex:page>

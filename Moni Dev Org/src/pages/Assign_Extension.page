@@ -1,0 +1,23 @@
+<apex:page StandardController="Account" extensions="AssignExtension">
+    <apex:form >
+        <apex:outputLabel >Name</apex:outputLabel>
+        <apex:inputField value="{!acnt.Name}"/> &nbsp;
+        <apex:outputLabel >Account Number</apex:outputLabel> 
+        <apex:inputField value="{!acnt.AccountNumber}"/> 
+        <apex:outputLabel >Type</apex:outputLabel> 
+        <apex:inputField value="{!acnt.Type}"/>
+        <apex:outputpanel id="counter">
+            <apex:outputText value="+!: {!count}"/>
+            <apex:actionSupport event="onclick" 
+                                action="{!incrementCounter}" 
+                                rerender="counter" status="counterStatus"/>
+        </apex:outputpanel>
+        <apex:actionStatus id="counterStatus" 
+                           startText=" (incrementing...)" 
+                           stopText=" (done)"/> 
+        <apex:commandButton value="+" action="{!met1}"/> &nbsp; &nbsp; &nbsp;
+        <apex:commandButton value="-" action="{!met2}"/> <br/> <br/> <br/>
+        <apex:commandButton value="Submit" action="{!save}"/> &nbsp; &nbsp; &nbsp;
+        <apex:commandButton value="Cancel" action="{!cancel}"/>
+    </apex:form> 
+</apex:page>

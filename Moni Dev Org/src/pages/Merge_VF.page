@@ -1,0 +1,6 @@
+<apex:page standardController="Bart__c"
+ extensions="VFController"
+ action="{!autoRun}"
+>
+  
+</apex:page>

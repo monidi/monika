@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>33.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>depending on one picklist selection other fields are diplayed, get dependent picklist values inVF</description>
+    <label>DependentTest1</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>8</minorNumber>
+        <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
+</ApexPage>

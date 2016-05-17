@@ -1,0 +1,20 @@
+<apex:page standardController="Contact">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:pageBlock >
+  
+  <apex:form >
+      <b><h1>Contact Name Text:</h1></b> <apex:inputText id="ACId"/> <br/>
+      <b><h1>Contact Name Field:</h1></b> <apex:inputField id="AC1Id" value="{!Contact.LastName}"/> <br/>
+      <b><h1>Lead Source Text:</h1></b> <apex:inputText id="RaId" value="{!Contact.LeadSource}"/> <br/>
+      <b><h1>Lead Source Field:</h1></b> <apex:inputField id="Ra1Id" value="{!Contact.LeadSource}"/> <br/>
+      <b><h1>Phone Number Text:</h1></b> <apex:inputText id="PhId"/> <br/>
+       <b><h1>Phone Number Field:</h1></b> <apex:inputField id="Ph1Id" value="{!Contact.Phone}"/> <br/>
+      <b><h1>Level Text:</h1></b> <apex:inputText id="LvlId"/> <br/>
+      <b><h1>Level Field:</h1></b> <apex:inputField id="LId" value="{!Contact.Level__c}"/> <br/>-->
+      <b><h1>Description Text:</h1></b> <apex:inputText id="StId"/> <br/>
+      <b><h1>Description Field:</h1></b> <apex:inputField id="St1Id" Value="{!Contact.Description}"/> <br/>
+      <apex:commandButton action="{!save}" value="Save"/>
+  </apex:form>
+  </apex:pageBlock>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

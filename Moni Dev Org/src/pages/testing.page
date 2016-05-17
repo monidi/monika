@@ -1,0 +1,9 @@
+<apex:page standardController="Account" showHeader="true">
+
+    <support:clickToDial number="571-533-4150"
+
+        entityId="001XB000000HFUM"
+
+        params="myparam1,myparam2"  />
+
+</apex:page>

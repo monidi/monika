@@ -1,0 +1,29 @@
+<apex:page standardController="Account" recordSetVar="acc" renderAs="PDF">
+    <apex:form >
+        <h1 style="font-size:17px;"> PDF GENERATION EXAMPLE </h1> 
+        <p style="font-family:Arial Black, Gadget, sans-serif;font-size:15px;"> This is an example  </p>
+        <body>
+            <table style="border-collapse:collapse;width:100%;font-family:rebuchet MS, Arial, Helvetica, sans-serif;">
+                <tbody style="display:table-row-group;veritical-align:middle;">
+                    <tr style="display:table-row;">
+                        <th style="fnt-size:1 em;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Name </th>
+                        <th style="fnt-size:1 em;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Phone </th>
+                    <th style="fnt-size:1 em;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Type </th>
+                    
+                    </tr>
+                    <apex:repeat value="{!acc}" var="a">
+                        <tr>
+                            <!-- <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;border-collapse:collapse;">{!a.Name}</td>
+                            <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;border-collapse:collapse;" >{!a.Phone}</td>
+                            <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;border-collapse:collapse;">{!a.Type}</td>-->
+                            
+                            <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;">{!a.Name}</td>
+                            <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!a.Phone}</td>
+                            <td style="font-size:lem;border:1px solid #98bf21;padding:3px 7px 2px 7px;">{!a.Type}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </body>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+
+<apex:iframe src="https://diau-dev-ed.my.salesforce.com/00Oo0000000lKlw"
+
+height="1110px" width="1160px" scrolling="true"/>
+
+</apex:page>

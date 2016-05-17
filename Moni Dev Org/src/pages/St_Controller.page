@@ -1,0 +1,13 @@
+<apex:page standardController="Lead">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1><b><u>Lead Information</u></b></h1><br/>
+ <!-- <b>Lead Last Name:</b> {!Lead.LastName}<br/>
+  <b>Lead Status:</b> {!Lead.Status}<br/>
+  <b>Lead Company:</b> {!Lead.Company}<br/>
+  <b>Lead Title:</b> {!Lead.Title}-->
+   {!Lead.LastName}<br/>
+  {!Lead.Status}<br/>
+   {!Lead.Company}<br/>
+   {!Lead.Title}
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

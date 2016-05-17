@@ -1,0 +1,99 @@
+<apex:page standardController="Account" showheader="false" sidebar="false" renderAs="pdf" >
+ <head>
+
+ <style>
+    table.gridtable {
+   font-family: verdana,arial,sans-serif;
+   font-size:11px;
+    color:#333333;
+    border-width: 1px;
+     border-color: #666666;
+ }
+    table.gridtable th {
+     border-width: 1px;
+   padding: 8px;
+   border-style: solid;
+   border-color: #666666;
+  font-weight:bold;
+
+ }
+table.gridtable td {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #666666;
+background-color: #ffffff;
+ }
+ </style> 
+ </head>    
+    <table  Id="header" style="width: 100%; " border ="1">     
+     <tr>
+   <!-- <td style="width: 50%"><apex:image value="{!URLFOR($Resource.Logo)}"/><br/><br/> 
+
+    </td>    -->         
+     <td style="width: 50%;"   >
+    <table Class = "gridtable" > // This table does not display borders
+        <tr>
+            <th>Date</th>
+            <th>Invoice #</th>
+        </tr>
+        <tr>
+            <!-- <td> <apex:outputText value="{0,date,MM/dd/yyyy}" >
+              
+        </apex:outputText></td> -->
+            <td><apex:outputText value="{!Account.Name}" /></td>
+            </tr>
+            <tr>
+             <td><apex:outputText value="{!Account.Parent}" /></td>
+        </tr>
+    </table><br/>
+    <table Class = "gridtable" cellpadding="1" cellspacing = "1" >
+        <tr >
+            <th>P.O. No. </th>
+            <th>Terms</th>
+            <th>Project</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Net 60</td>
+            <td></td>
+        </tr>
+    </table>
+    </td>
+</tr>
+<tr >
+       <td >
+         <table Class = "gridtable" cellpadding="2" cellspacing = "2">
+        <tr>
+
+            <th>Bill To</th>
+        </tr>
+        <tr> 
+              <td> <apex:outputText value="{!Account.Name}" />   <br/>
+                
+            </td>
+
+        </tr>
+    </table>
+    </td>
+    <td > </td>
+</tr> 
+</table>
+<style>
+input[type=text] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+</style>
+ <apex:form >
+   <apex:pageBlock title="Contact Create/Edit">
+      <apex:pageBlockSection title="Account Information">
+      <apex:outputField value="{!Account.Name}"/> 
+       <apex:inputField value="{!Account.Name}"/>
+      </apex:pageBlockSection>
+   </apex:pageBlock>
+  </apex:form>
+</apex:page>

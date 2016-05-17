@@ -1,0 +1,9 @@
+<apex:page showHeader="True">
+  <html>
+          <form>
+            <h1><b>First name:</b></h1> <input type="text" name="firstname"></input><br/>
+            <h1><b>Last name:</b></h1> <input type="text" name="lastname"></input>
+          </form>
+      
+  </html>
+</apex:page>

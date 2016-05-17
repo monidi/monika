@@ -1,0 +1,19 @@
+<apex:page controller="TestBatchLead">
+    <apex:form >
+        <apex:outputLabel >Lead Name</apex:outputLabel>
+        <apex:outputField value="{!le.LastName}"/> <br/>
+        <apex:outputLabel >Status</apex:outputLabel> 
+        <apex:outputField value="{!le.Status}"/> <br/>
+        <apex:outputLabel >Company</apex:outputLabel> 
+        <apex:outputField value="{!le.Company}"/> <br/>
+        <apex:pageBlock >
+            <apex:pageblocktable value="{!le}" var="vaac">
+                <apex:column value="{!vaac.LastName}"/> 
+                 <apex:column value="{!vaac.Status}"/> 
+                <apex:column value="{!vaac.Company}"/> 
+                 
+           <!-- <apex:column value="{!vaac.}"/> -->
+            </apex:pageblocktable>
+            </apex:pageBlock>
+            </apex:form> 
+</apex:page>

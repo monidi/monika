@@ -1,0 +1,102 @@
+<apex:page standardController="CusObj1__c" renderAs="PDF">
+    <apex:form >
+        <body>
+        <table style="border-collapse:collapse;width:66%;font-family:rebuchet MS, Arial, Helvetica, sans-serif;">
+                <tbody style="display:table-row-group;veritical-align:middle;">
+                    
+                    
+                        <tr>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Ticket#</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Logged By</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Request Type</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Business Process</td>
+                            
+                         </tr>
+                         <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.Owner.Name}</td>                           
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.LastModifiedBy.Name}</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.LastModifiedBy}</td>  
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.LastModifiedBy.Name}</td>                          
+                         </tr>
+                         <!--<tr>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Priority</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Business Impact</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Business Area</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;"></td>
+                         </tr>
+                         <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.Priority__c}</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.Release_Impact__c}</td>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.Business_Area__c}</td>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ></td>                             
+                         </tr>      -->                                     
+                  </tbody>
+            </table>
+            <table style="border-collapse:collapse;width:66%;font-family:rebuchet MS, Arial, Helvetica, sans-serif;">
+                <tbody style="display:table-row-group;veritical-align:middle;">
+           <tr>
+            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Descrption of Request</td><td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" >{!CusObj1__c.LastModifiedBy}</td>
+             </tr>   
+             </tbody>            
+        </table>
+<br/>
+            <table style="border-collapse:collapse;width:66%;font-family:rebuchet MS, Arial, Helvetica, sans-serif;">
+                <tbody style="display:table-row-group;veritical-align:middle;">
+           <tr>
+            <td style="font-size:1em;border:1px solid #98bf21;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21; width:11%;"> <apex:outputField value="{!CusObj1__c.LastModifiedBy}"/> </td><td style="font-size:12px;padding:3px 7px 2px 7px; background-color:#98bf21;color:#fff;border:1px solid #98bf21;"> <b> Business Requirements Needed </b></td> 
+             </tr>   
+             </tbody>            
+        </table>
+
+<br/>
+
+            <table style="border-collapse:collapse;width:66%;font-family:rebuchet MS, Arial, Helvetica, sans-serif;">
+                <tbody style="display:table-row-group;veritical-align:middle;">
+                    
+        <tr style="display:table-row;">
+        <th style="font-size:10px;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21;">  </th>
+                            <th style="font-size:10px;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Date </th>
+                            <th style="font-size:10px;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Estimated Date </th>
+                        <th style="font-size:10px;text-align:left;padding-top:5px;padding-bottom;4px;padding:3px 7px 2px 7px; background-color:#A7C942;color:#fff;border:1px solid #98bf21;"> Actual Date </th>
+                    </tr>                    
+                        <tr>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;"></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; ">Date Logged</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.PDFDate__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;"></td>
+                         </tr>
+                        <!-- <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;"></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Date Assigned</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Date_Assigned__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;"></td>
+                         </tr>
+                         <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21;"> <apex:outputField value="{!CusObj1__c.Development_Completed__c}"/> </td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;">Development Completion Date</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Est_Development_Completion_Date__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Actual_Development_Completion_Date__c}" /> </apex:outputText></td>
+                         </tr>
+                         <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21;"> <apex:outputField value="{!CusObj1__c.Unit_Testing_Completed__c}"/> </td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Unit Testing Date</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Est_Unit_Testing_Date__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Actual_Unit_Testing_Date__c}" /> </apex:outputText></td>
+                         </tr>
+                         <tr>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21;"> <apex:outputField value="{!CusObj1__c.Communication_Training_Completed__c}"/> </td> 
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;">Communication Training</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Est_Communication_Training__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Actual_Communication_Training_Date__c}" /> </apex:outputText></td>
+                         </tr>
+                         <tr>
+                             <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px; color:#fff;border:1px solid #98bf21;"> <apex:outputField value="{!CusObj1__c.Launch_Completed__c}"/> </td> 
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;">Launch Date</td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Est_Launch_Date__c}" /> </apex:outputText></td>
+                            <td style="font-size:8px;border:1px solid #98bf21;padding:3px 7px 2px 7px;background-color:#A7C942;color:#fff;border:1px solid #98bf21;" ><apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!CusObj1__c.Actual_Launch_Date__c}" /> </apex:outputText></td>
+                         </tr>-->
+                  </tbody>
+            </table>
+        </body>
+    </apex:form>
+</apex:page>

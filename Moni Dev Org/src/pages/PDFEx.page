@@ -1,0 +1,12 @@
+<apex:page standardController="CusObj1__c" renderAs="PDF">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Hi</h1>
+  <i><h1><b><u>Ticket Information</u></b></h1></i>
+  <apex:form >
+          <apex:pageBlock >
+  <b>Account Last Name:</b> {!CusObj1__c.Name}<br/>
+  
+          </apex:pageBlock>
+          </apex:form>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

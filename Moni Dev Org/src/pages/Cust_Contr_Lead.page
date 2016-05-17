@@ -1,0 +1,11 @@
+<apex:page controller="LeadCustomContAssign">
+    <apex:form >
+        <apex:outputLabel >Lead Name</apex:outputLabel>
+        <apex:inputField value="{!le.LastName}"/> <br/>
+        <apex:outputLabel >Status</apex:outputLabel> 
+        <apex:inputField value="{!le.Status}"/> <br/>
+        <apex:outputLabel >Company</apex:outputLabel> 
+        <apex:inputField value="{!le.Company}"/> <br/>
+        <apex:commandButton value="Submit" action="{!save}"/>
+    </apex:form> 
+</apex:page>

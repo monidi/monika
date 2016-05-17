@@ -1,0 +1,35 @@
+<apex:page standardController="Account">
+    <apex:form >
+          <apex:pageBlock >
+              <apex:pageBlockTable value="{!Account.Opportunities}" var="opp">
+                  <apex:column value="{!opp.Name}"/>
+                  <apex:column value="{!opp.StageName}"/>
+                  <apex:column value="{!opp.Amount}"/>
+                  <apex:column value="{!opp.CloseDate}"/>
+              </apex:pageBlockTable>
+              <apex:pageBlockButtons location="top">
+                  <apex:commandButton value="New Opportunity"/>
+              </apex:pageBlockButtons>
+         </apex:pageBlock>
+         <apex:dataTable value="{!Account.Opportunities}" var="opp" border="4" cellspacing="8" cellpadding="7" bgcolor="yellow">
+                  <apex:column value="{!opp.Name}">
+                      <apex:facet name="header">Name</apex:facet>
+                  </apex:column>
+                  <apex:column value="{!opp.StageName}">
+                      <apex:facet name="header">Stage Name</apex:facet>
+                  </apex:column>
+                  <apex:column value="{!opp.Amount}">
+                      <apex:facet name="header">Amount</apex:facet>
+                  </apex:column>
+                  <apex:column value="{!opp.CloseDate}">
+                      <apex:facet name="header">Close Date</apex:facet>
+                  </apex:column>
+              </apex:dataTable> 
+               <apex:repeat value="{!Account.Opportunities}" var="opp">
+                  <apex:outputText >{!opp.Name}</apex:outputText> &nbsp;
+                  <apex:outputText >{!opp.StageName}</apex:outputText> &nbsp;
+                  <apex:outputText >{!opp.Amount}</apex:outputText> &nbsp;
+                  <apex:outputText >{!opp.CloseDate}</apex:outputText> <br/>
+              </apex:repeat>
+    </apex:form>
+</apex:page>

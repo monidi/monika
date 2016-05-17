@@ -1,0 +1,18 @@
+<apex:page standardController="TestObject__c">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:pageBlock >
+  
+  <apex:form >
+      <b><h1>TestObject Name Text:</h1></b> <apex:inputText id="ToId"/> <br/>
+      <b><h1>TestObject Name Field:</h1></b> <apex:inputField id="TO11Id" value="{!TestObject__c.Name}"/> <br/>
+      <b><h1>VisTest__c Text:</h1></b> <apex:inputText id="ViTestId" value="{!TestObject__c.VisTest__c}"/> <br/>
+      <b><h1>VisTest__c Field:</h1></b> <apex:inputField id="VT1Id" value="{!TestObject__c.VisTest__c}"/> <br/>
+      <b><h1>VisTArea__c Text:</h1></b> <apex:inputText id="VAId"/> <br/>
+       <b><h1>VisTArea__c Field:</h1></b> <apex:inputField id="VA1Id" value="{!TestObject__c.VisTArea__c}"/> <br/>
+      <b><h1>Phone Text:</h1></b> <apex:inputText id="LvlId"/> <br/>
+      <b><h1>Phone Field:</h1></b> <apex:inputField id="LId" value="{!TestObject__c.Phone__c}"/> <br/>
+      <apex:commandButton action="{!save}" value="Save"/>
+  </apex:form>
+  </apex:pageBlock>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

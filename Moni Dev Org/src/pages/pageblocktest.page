@@ -1,0 +1,28 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  
+<apex:form >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:outputLabel >new</apex:outputLabel>
+    </apex:pageBlockSection>
+    
+<apex:pageBlockSection >
+        <apex:outputLabel >new1</apex:outputLabel>
+    </apex:pageBlockSection>    
+    </apex:pageBlock>
+    
+
+ <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:outputLabel >new</apex:outputLabel>
+    </apex:pageBlockSection>
+    
+<apex:pageBlockSection >
+        <apex:outputLabel >new1</apex:outputLabel>
+    </apex:pageBlockSection>    
+    </apex:pageBlock>
+</apex:form>
+  
+ 
+</apex:page>

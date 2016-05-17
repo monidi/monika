@@ -1,0 +1,49 @@
+<apex:page controller="LeadCustomContAssign12">
+    <apex:form >
+    <!--<apex:pageMessages id="pageMessages"/>-->
+ <!--public static System.TimeZone getTimeZone(){   
+TimeZone tz = 
+  UserInfo.getTimeZone();
+System.debug(
+  'Display name: ' + 
+  tz.getDisplayName());
+System.debug(
+  'ID: ' + 
+  tz.getID());
+  
+}   -->   
+  <apex:outputLabel >Lead Name</apex:outputLabel>
+        <apex:inputField value="{!le.LastName}"/> <br/>
+        <apex:outputLabel >Status</apex:outputLabel> 
+        <apex:inputField value="{!le.Status}" required="true"/> <br/>
+        <apex:outputLabel >Company</apex:outputLabel> 
+        <apex:inputField value="{!le.Company}"/> <br/>
+        <apex:commandButton value="Submit" action="{!save}"/>
+        <apex:actionFunction name="myactionfun"  action="{!actionFunMethod}" reRender="outptText"/><br></br> <br></br>
+        <apex:inputText >
+                <apex:actionSupport action="{!save}" event="onclick" reRender="outptText" />
+             </apex:inputText> <br></br>
+             <apex:pageBlock >
+        <apex:outputText value="{!Display_This_String}" id="outptText"/>
+    </apex:pageBlock>         
+
+        
+        <!--  <apex:outputpanel id="counter">
+            <apex:outputText value="user created"/>
+            <apex:actionSupport event="onclick" 
+                                action="{!save}" 
+                                rerender="counter" status="counterStatus"/>
+        </apex:outputpanel>
+        <apex:actionStatus id="counterStatus" 
+                           startText=" (incrementing...)" 
+                           stopText=" (done)"/>-->
+        
+<!--<apex:outputPanel id="page"> 
+<apex:outputPanel rendered="{!doneSearch}">
+hi hello </apex:outputPanel>
+</apex:outputPanel>-->
+</apex:form> 
+                
+  
+
+</apex:page>

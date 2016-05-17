@@ -1,0 +1,18 @@
+<apex:page controller="CustomContEx">
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.maskedinput.js" type="text/javascript"></script>
+
+jQuery(function($){
+   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+   $("#phone").mask("(999) 999-9999");
+   $("#tin").mask("99-9999999");
+   $("#ssn").mask("999-99-9999");
+});
+    <apex:form >
+        <apex:outputLabel >Product</apex:outputLabel>
+        <apex:inputText value="{!product}"/> <br/>
+        <apex:outputLabel >Cost</apex:outputLabel> 
+        <apex:inputText value="{!cost}"/> <br/>
+        <apex:commandButton value="Submit" action="{!subMeth}"/>
+    </apex:form> 
+</apex:page>

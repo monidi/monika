@@ -1,0 +1,16 @@
+<apex:page controller="RepeatTag" id="thePage">
+<table>
+    <apex:repeat value="{!strings}" var="string" id="theRepeat">
+
+        <apex:outputText value="{!string}" id="theValue"/><br/>
+
+    </apex:repeat>
+    <apex:repeat value="{!strings1}" var="string1" id="theRepeat1">
+
+        <apex:outputText value="{!string1}" id="theValue1"/><br/>
+
+    </apex:repeat>
+    
+    </table>
+
+</apex:page>

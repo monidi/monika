@@ -1,0 +1,27 @@
+<apex:page standardController="Account">
+
+<!--<apex:iframe src="https://tableau.phillips66.net/views/BrandedContractRenewalsDashboard/Home?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"
+
+height="1110px" width="1160px" scrolling="true"/>-->
+<apex:iframe src="https://10az.online.tableau.com/t/diau/views/DT1/Overview?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"
+
+height="1110px" width="1160px" scrolling="true"/>
+
+</apex:page>
+<!--<apex:page >
+<apex:canvasApp applicationName="Tbaleau2"
+   height="536px"
+   width="654px"
+   parameters="
+   {
+       'ts.name':'DT1',
+       'ts.width':'1000',
+       'ts.height':'400',
+       'ts.hostUrl':'https://10az.online.tableau.com',
+       'ts.tabs':'no',
+       'ts.toolbar':'yes',
+       'ts.trustedTicket.username': 'monikareddy.konatham@gmail.com',
+       'ts.trustedTicket.password': 'Diaumalla4'
+   }"
+/>
+</apex:page>-->

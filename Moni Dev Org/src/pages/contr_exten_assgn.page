@@ -1,0 +1,13 @@
+<apex:page StandardController="Account">
+    <apex:form >
+        <apex:outputLabel >Name</apex:outputLabel>
+        <apex:inputField value="{!Account.Name}"/> &nbsp;
+        <apex:outputLabel >Account Number</apex:outputLabel> 
+        <apex:inputField value="{!Account.AccountNumber}"/> 
+        <apex:outputLabel >Type</apex:outputLabel> 
+        <apex:inputField value="{!Account.Type}"/> 
+        <apex:commandButton value="+" /> &nbsp; &nbsp; &nbsp;
+        <apex:commandButton value="-" /> <br/> <br/> <br/>
+        
+    </apex:form> 
+</apex:page>
